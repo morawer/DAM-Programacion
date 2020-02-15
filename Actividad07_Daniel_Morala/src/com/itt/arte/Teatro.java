@@ -1,5 +1,7 @@
 package com.itt.arte;
 
+import java.util.Scanner;
+
 public class Teatro extends Local implements Sala {
 	
 	private Obra obra;
@@ -83,9 +85,35 @@ public class Teatro extends Local implements Sala {
 
 
 	@Override
-	public String venderLocalidad(int fila, int butaca, Espectador e) {
-		// TODO Auto-generated method stub
-		return null;
+	public String venderLocalidad(int  fila, int butaca, Espectador e) {
+	
+		String nombre;
+		String tlf;
+		int edad;
+		
+		System.out.println("¿En que fila quieres sentarte? (0-4)");
+		Scanner sc = new Scanner(System.in);
+		fila = sc.nextInt();
+		
+		System.out.println("¿Y en que butaca? (0-10)");
+		butaca = sc.nextInt();
+		
+		System.out.println("¿Como te llamas?");
+		nombre = sc.next();	
+		
+		System.out.println("¿Cual es tu número de telefono?");
+		tlf = sc.next();
+		
+		System.out.println("¿Cuantos años tienes?");
+		edad = sc.nextInt();
+		
+		sc.close();
+		
+		localidades[fila][butaca] = new Espectador (nombre, tlf, edad);
+		
+		return "";
+		
+		
 	}
 
 
@@ -109,6 +137,5 @@ public class Teatro extends Local implements Sala {
 		return 0;
 	}
 
-	
 	
 }
