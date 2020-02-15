@@ -54,15 +54,25 @@ public class Teatro extends Local implements Sala {
 	public String verProgramacion() {
 		return "Hoy representamos " + obra.getTitulo() + ", género: " 
 				+ obra.getGenero() + ", duración: " + obra.getMinutosDuracion() + 
-				" minutos. En " + getDomicilio() + " local de " + getMetros() + " metros y con " + getAccesos();
+				" minutos. En " + getDomicilio() + ". Local de " + getMetros() + 
+				" metros y con " + getAccesos() + " accesos.";
 	}
 
 
 	@Override
 	public String verLocalidades() {
-		return null;		
-	}
-			
+		for (int i = 0; i < 5; i++) {
+			System.out.println();
+			for ( int j = 0; j < 10; j++) {
+				if (localidades [i][j] == null) {
+					System.out.print(i + "." + j + " Libre. ");
+				} else { 
+					System.out.print(i + "." + j + " Ocupado. ");
+				}
+			}	
+		}
+		return "";
+	}		
 
 
 	@Override

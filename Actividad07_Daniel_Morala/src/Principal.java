@@ -26,7 +26,7 @@ public class Principal {
 
                                                        case '1': System.out.println (teatro.verProgramacion());
 
-                                                       case '2':
+                                                       case '2': System.out.println(teatro.verLocalidades());
 
                                                        case '3':
 
