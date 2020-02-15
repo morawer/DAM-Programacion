@@ -30,7 +30,7 @@ public class Principal {
 
                                                        case '3':
 
-                                                       case '4':System.out.println(teatro.venderLocalidad(fila, butaca, e));
+                                                       case '4':System.out.println( teatro.venderLocalidad(fila, butaca, e));
 
                                                        case '5':
 

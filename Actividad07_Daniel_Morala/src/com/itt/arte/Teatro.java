@@ -109,6 +109,7 @@ public class Teatro extends Local implements Sala {
 		
 		sc.close();
 		
+		
 		localidades[fila][butaca] = new Espectador (nombre, tlf, edad);
 		
 		return "";
