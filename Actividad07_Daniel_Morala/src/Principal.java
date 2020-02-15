@@ -24,7 +24,7 @@ public class Principal {
 
                                          switch (opc) {
 
-                                                       case '1':
+                                                       case '1': System.out.println (teatro.verProgramacion());
 
                                                        case '2':
 
@@ -49,6 +49,7 @@ public class Principal {
                               lector.close();
 
 }
+
 
 public static char mostrarMenu() {
 

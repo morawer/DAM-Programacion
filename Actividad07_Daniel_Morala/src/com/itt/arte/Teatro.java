@@ -52,7 +52,9 @@ public class Teatro extends Local implements Sala {
 
 	@Override
 	public String verProgramacion() {
-		return "La programacion es " + obra.toString() + "en " + toString();
+		return "Hoy representamos " + obra.getTitulo() + ", género: " 
+				+ obra.getGenero() + ", duración: " + obra.getMinutosDuracion() + 
+				" minutos. En " + getDomicilio() + " local de " + getMetros() + " metros y con " + getAccesos();
 	}
 
 
