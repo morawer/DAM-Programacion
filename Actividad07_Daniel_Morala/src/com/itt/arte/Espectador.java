@@ -46,8 +46,17 @@ public class Espectador {
 		return "Espectador [nombre=" + nombre + ", tlf=" + tlf + ", edad=" + edad + "]";
 	}
 	
-	public String rangoEdad() {
-		return null;
+	public String rangoEdad(int edad) {
+		if (edad > 0 && edad <= 12) {
+			return "INFANTIL";
+		} else if (edad > 12 && edad <= 17){
+			return "MENOR";
+		} else if (edad > 17 && edad <= 64) {
+			return "MAYOR";
+		} else {
+			return "JUBILADO";
+		}
+	
 	}
 
 }
