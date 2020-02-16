@@ -13,9 +13,9 @@ public class Principal {
 		
 		//Cada objeto hace la llamada al metodo toString().
 		
-		System.out.println(p1.toString());
-		System.out.println(p2.toString());
-		System.out.println(p3.toString());
+		System.out.println(p1);
+		System.out.println(p2);
+		System.out.println(p3);
 		
 		System.out.println();
 		
